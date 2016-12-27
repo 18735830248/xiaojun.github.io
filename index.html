@@ -6,7 +6,7 @@
 	<script src="js/jquery-1.11.1.js"></script>
 </head>
 <style>
-	*{padding: 0;margin: 0;list-style: none;}
+	*{padding: 0;margin: 0;list-style: none;text-decoration: none;}
 	.tabn{
 		width: 100%;
 		height: 100%;
@@ -23,19 +23,57 @@
 		position: absolute;
 		text-align: center;
 	}
+	.warp{
+		position: absolute;
+		width: 100%;
+		background:pink;
+	}
+	.warp header{
+		width: 100%;
+		height: 44px;
+		text-align: center;
+		line-height: 44px;
+		font-size: 30px;
+		color: red;
+		background: #ccc;
+	}
+	nav{
+		width: 100%;
+	}
+	nav a{
+		width: 25%;
+		text-align: center;
+		display: block;
+		float: left;
+	}
+	.main{
+		margin-top: 20px;
+		background: #000;
+		color: #fff;
+	}
 </style>
 <body>
 	<div class="warp">
-		<header></header>
+		<header>欢迎来到矦晓军的主页！</header>
+		<nav>
+			<a href="#">主页</a>
+			<a href="#">个人简介</a>
+			<a href="#">作品</a>
+			<a href="#">关于</a>
+		</nav>
+		<div class="main">
+			<p>这是我的个人经历</p>
+		</div>
 	</div>
 	<div class="tabn">
 		<p>
+			<span>距离元旦</span>
 			<span id="t_d">00天</span>
 		    <span id="t_h">00时</span>
 		    <span id="t_m">00分</span>
 		    <span id="t_s">00秒</span>
 		</p>
-	</div>
+	</div> 
 </body>
 <script>
 	$(".tabn").on("click",function(){
